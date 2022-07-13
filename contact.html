@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/ecommerce-side.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Goyo's roast chickens</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Packages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Grilled chicken</a>
+                        <a class="dropdown-item" href="#">Crispy chicken</a>
+                        <a class="dropdown-item" href="#">Orange chicken</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Order of fries plus soda</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>                   
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+        style="background-image: url('assets/images/pollo-fondo.jpg'); height: 90vh">
+        <h1 class="mb-3 h2">The best chicken in the region</h1>
+        <p>
+            Welcome to don Goyo's roasted chickens where our priority is to pamper your palate, now for your convenience
+            we put at your disposal our packages where you can order and also receive constant customer benefits.
+        </p>
+        <div class="d-flex justify-content-center h-80">
+            <div class="card" style="width: 80%;">
+                <div class="card-header">
+                    <h3 style="color:#007bff;;">Contac us</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="alert alert-primary" role="alert">
+                            Do you have any questions or comments regarding our product? Do not hesitate to contact us we can at your disposal our suggestion box.
+                          </div>                        
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label class="label-color" for="inputFirstname">Your name</label>
+                                <input type="text" class="form-control" id="inputFirstname" placeholder="First name">
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="label-color" for="inputEmail">Your email</label>
+                                <input type="text" class="form-control" id="inputEmail"
+                                    placeholder="email@dominio.com">
+                            </div>
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="col-sm-12" >
+                                <label class="label-color" for="inputSubject" rows="2" >Subject</label>
+                                <input type="text" class="form-control" id="inputSubject" placeholder="SubJect" style="width:100%;">
+                            </div>
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="col-sm-12" >
+                                <label class="label-color" for="message">Your message</label>
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                             </div>
+                        </div>
+                    </form>
+                    <div class="text-center text-md-left">
+                        <button type="button" class="btn btn-primary">Send</button>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Jumbotron -->
+
+</body>
+
+</html>

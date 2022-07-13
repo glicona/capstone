@@ -1,0 +1,14 @@
+.fire-primary{
+    background-color:hsla(0.1turn,100%,50%,0.5);
+  }
+  
+.label-color {
+    color: black;
+}
+
+.color-div{
+    background-color: black;
+}
+html, body {
+    min-height: 100%;
+}
