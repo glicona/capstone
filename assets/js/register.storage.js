@@ -1,6 +1,4 @@
 function validate_register(){
-    console.log('::::::: print information ::::::'+localStorage.getItem("glicona-username"));
-    console.log('::::::: print information ::::::'+localStorage.getItem("glicona-password"));
     var firstName= document.getElementById("inputFirstname").value;
     var lastName= document.getElementById("inputLastname").value;
     var street= document.getElementById("inputStreet").value;
@@ -25,9 +23,6 @@ function save_register(){
     var state= document.getElementById("inputState").value;
     var username= document.getElementById("mod-username").value;
     var password= document.getElementById("mod-password").value;
- 
-     console.log("::::::: user name :::::: "+username.toLowerCase());
-
     localStorage.setItem(username.toLowerCase()+"-first-name",firstName);
     localStorage.setItem(username.toLowerCase()+"-last-name",lastName);
     localStorage.setItem(username.toLowerCase()+"-street",street);
