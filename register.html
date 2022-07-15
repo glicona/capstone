@@ -8,17 +8,18 @@
     <title>Document</title>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/register.storage.js"></script>
     <link   rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link   rel="stylesheet" href="assets/css/ecommerce-side.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Goyo's roast chickens</a>
+        <a class="navbar-brand font-nav-tittle" href="index.html">Goyo's roast chickens</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse font-nav-options" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -29,7 +30,7 @@
                         Packages
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Grilled chicken</a>
+                        <a class="dropdown-item" href="services.html">Grilled chicken</a>
                         <a class="dropdown-item" href="#">Crispy chicken</a>
                         <a class="dropdown-item" href="#">Orange chicken</a>
                         <div class="dropdown-divider"></div>
@@ -48,49 +49,102 @@
             </ul>
         </div>
     </nav>
-    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
-        style="background-image: url('assets/images/pollo-fondo.jpg'); height: 90vh">
-        <h1 class="mb-3 h2">The best chicken in the region</h1>
-        <p>
+    <div class="p-5 text-center shadow-1-strong rounded mb-5 text-white" >
+        <h1 class="mb-3 h2 font-tittle" style="font-weight: bold;" >The best chicken in the region</h1>
+       <!-- <p class="font-tittle" >
             Welcome to don Goyo's roasted chickens where our priority is to pamper your palate, now for your convenience
             we put at your disposal our packages where you can order and also receive constant customer benefits.
-        </p>
-        
+        </p> -->
+        <section>
         <div class="d-flex justify-content-center h-80" >
             <div class="card" style="width: 80%;" >
                 <div class="card-header">
                     <h3 style="color:#007bff;;" >User register</h3>
                 </div>
                 <div class="card-body">
-                  <form>
+                  <form id="register-form" class="is-invalid" >
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <label class="label-color" for="inputFirstname">First name</label>
-                            <input type="text" class="form-control" id="inputFirstname" placeholder="First name">
+                            <input type="text" class="form-control" id="inputFirstname" placeholder="First name" required>
+                            <div id="feedback-first-name" class="invalid-feedback">
+                                Please provide a valid first name.
+                            </div>
                         </div>
                         <div class="col-sm-6">
                             <label class="label-color" for="inputLastname">Last name</label>
                             <input type="text" class="form-control" id="inputLastname" placeholder="Last name">
+                            <div id="feedback-last-name" class="invalid-feedback">
+                                Please provide a valid last name.
+                            </div>
                         </div>
                     </div>
-
                     <div class="input-group form-group">
-                        <input type="text" class="form-control" placeholder="1234 Main St">
+                        <input id="inputStreet" type="text" class="form-control" placeholder="1234 Main St">
+                        <div id="feedback-street" class="invalid-feedback">
+                            Please provide a valid street
+                        </div>
                     </div>
                     <div class="input-group form-group">
-                        <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+                        <input id="inputFloor" type="text" class="form-control" placeholder="Apartment, studio, or floor">
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
                           <label class="label-color" for="inputCity">City</label>
-                          <input type="text" class="form-control" id="inputCity">
+                          <input  type="text" class="form-control" id="inputCity">
                         </div>
                         <div class="form-group col-md-4">
                           <label class="label-color" for="inputState">State</label>
                           <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
+                            <option selected>Select a state</option>
+                            <option value="Alabama" >Alabama</option>
+                            <option value="Alaska" >Alaska</option>
+                            <option value="Arizona" >Arizona</option>
+                            <option value="Arkansas" >Arkansas</option>
+                            <option value="California" >California</option>
+                            <option value="Colorado" >Colorado</option>
+                            <option value="Connecticut" >Connecticut</option>
+                            <option value="Delaware" >Delaware</option>
+                            <option value="Florida" >Florida</option>
+                            <option value="Georgia" >Georgia</option>
+                            <option value="Hawaii" >Hawaii</option>
+                            <option value="Idaho" >Idaho</option>
+                            <option value="IllinoisIndiana" >IllinoisIndiana</option>
+                            <option value="Iowa" >Iowa</option>
+                            <option value="Kansas" >Kansas</option>
+                            <option value="Kentucky" >Kentucky</option>
+                            <option value="Louisiana" >Louisiana</option>
+                            <option value="Maine" >Maine</option>
+                            <option value="Maryland" >Maryland</option>
+                            <option value="Massachusetts" >Massachusetts</option>
+                            <option value="Michigan" >Michigan</option>
+                            <option value="Minnesota" >Minnesota</option>
+                            <option value="Mississippi" >Mississippi</option>
+                            <option value="Missouri" >Missouri</option>
+                            <option value="MontanaNebraska" >MontanaNebraska</option>
+                            <option value="Nevada" >Nevada</option>
+                            <option value="New Hampshire" >New Hampshire</option>
+                            <option value="New Jersey" >New Jersey</option>
+                            <option value="New Mexico" >New Mexico</option>
+                            <option value="New York" >New York</option>
+                            <option value="North Carolina" >North Carolina</option>
+                            <option value="North Dakota" >North Dakota</option>
+                            <option value="Ohio" >Ohio</option>
+                            <option value="Oklahoma" >Oklahoma</option>
+                            <option value="Oregon" >Oregon</option>
+                            <option value="PennsylvaniaRhode Island" >Pennsylvania Rhode Island</option>
+                            <option value="South Carolina" >South Carolina</option>
+                            <option value="South Dakota" >South Dakota</option>
+                            <option value="Tennessee" >Tennessee</option>
+                            <option value="Texas" >Texas</option>
+                            <option value="Utah" >Utah</option>
+                            <option value="Vermont" >Vermont</option>
+                            <option value="Virginia" >Virginia</option>
+                            <option value="Washington" >Washington</option>
+                            <option value="West Virginia" >West Virginia</option>
+                            <option value="Wisconsin" >Wisconsin</option>
+                            <option value="Wyoming" >Wyoming</option>
                           </select>
                         </div>
                         <div class="form-group col-md-2">
@@ -98,11 +152,49 @@
                           <input type="text" class="form-control" id="inputZip">
                         </div>
                       </div>
-                      <button type="submit" class="btn btn-primary">Sign in</button>
+                      <button id="btnSaveRegister" type="button" class="btn btn-primary" onclick="validate_register();" >Sign in</button>
+                      <!--
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Launch demo modal
+                    </button>     -->                  
                   </form>
                 </div> 
             </div>           
         </div>
+      </section>
+
+    <section>
+        <div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"  style="color: #007bff;;">User information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group">
+                                        <input id="mod-username" type="text" class="form-control" placeholder="Enter username" >
+                                    </div>
+                                    <div class="input-group" style="margin-top: 3%;">
+                                        <input id="mod-password" type="password" class="form-control" placeholder="Enter password" >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="save_register();" >Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
 </body>
 </html>
