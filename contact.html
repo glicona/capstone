@@ -8,17 +8,18 @@
     <title>Document</title>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/contact.user.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/ecommerce-side.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Goyo's roast chickens</a>
+        <a class="navbar-brand font-nav-tittle" href="index.html">Goyo's roast chickens</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse font-nav-options" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -29,7 +30,7 @@
                         Packages
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Grilled chicken</a>
+                        <a class="dropdown-item" href="services.html">Grilled chicken</a>
                         <a class="dropdown-item" href="#">Crispy chicken</a>
                         <a class="dropdown-item" href="#">Orange chicken</a>
                         <div class="dropdown-divider"></div>
@@ -48,13 +49,12 @@
             </ul>
         </div>
     </nav>
-    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
-        style="background-image: url('assets/images/pollo-fondo.jpg'); height: 90vh">
-        <h1 class="mb-3 h2">The best chicken in the region</h1>
-        <p>
+    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white" >
+        <h1 class="mb-3 h2 font-tittle" style="font-weight: bold;">The best chicken in the region</h1>
+      <!--<p>
             Welcome to don Goyo's roasted chickens where our priority is to pamper your palate, now for your convenience
             we put at your disposal our packages where you can order and also receive constant customer benefits.
-        </p>
+        </p>-->
         <div class="d-flex justify-content-center h-80">
             <div class="card" style="width: 80%;">
                 <div class="card-header">
@@ -90,7 +90,7 @@
                         </div>
                     </form>
                     <div class="text-center text-md-left">
-                        <button type="button" class="btn btn-primary">Send</button>
+                        <button type="button" class="btn btn-primary" onclick="send_mail();" >Send</button>
                     </div>                    
                 </div>
             </div>
